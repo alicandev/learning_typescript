@@ -1,7 +1,18 @@
-function countdown(_a) {
-    var current = _a.initial, _b = _a.final, final = _b === void 0 ? 0 : _b, _c = _a.interval, interval = _c === void 0 ? 1 : _c;
-    while (current > final) {
-        console.log(current);
-        current -= interval;
-    }
+// use spread operator to use an arbitrary amount of values as parameter
+function addArrow(action, ...values) {
+    let total = 0;
+    values.map(v => {
+        switch (action) {
+            case 'add':
+                total += v;
+                break;
+            case 'substract':
+                total -= v;
+                break;
+        }
+    });
+    return total;
 }
+addArrow("add", 3, 4, 5, 6);
+let source = [3, 4, 5];
+let target = [1, 2, ...source, 6, 7];
