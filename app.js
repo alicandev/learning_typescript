@@ -1,10 +1,8 @@
-//destructuring an object
-function getTodo(id) {
-    var todo = {
-        id: 123,
-        title: "Pick up the dry cleaning.",
-        completed: false
-    };
-    return todo;
+function countdown(options) {
+    var options = options === undefined ? {} : options, initial = options.initial === undefined ? 10 : options.initial, final = options.final === undefined ? 0 : options.final, interval = options.interval === undefined ? 1 : options.interval;
+    var current = initial;
+    while (current > final) {
+        console.log(current);
+        current -= interval;
+    }
 }
-var _a = getTodo(123), id = _a.id, title = _a.title, isCompleted = _a.completed;
