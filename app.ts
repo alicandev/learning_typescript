@@ -1,11 +1,12 @@
-﻿const osPrefix = 'os_';
-
-let support = {
-    ['os_Windows']: isSupported('Windows'),
-    ['os_iOS']: isSupported('iOS'),
-    ['os_Android']: isSupported('Android')
+﻿let animal = {
+    name: "Fido",
+    species: "Dog",
+    age: calculateAge(2010),
+    speak: () => console.log('Woof!')
 }
 
-function isSupported(os) {
-    return Math.random() >= 0.5;
-}
+var calculateAge = birthYear => Date.now() - birthYear
+
+var totalLength = (x:string, y:string) => x.length + y.length
+
+totalLength("asfdsa","asfdafsda")
