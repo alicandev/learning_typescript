@@ -1,9 +1,11 @@
-let animal = {
-    name: "Fido",
-    species: "Dog",
-    age: calculateAge(2010),
-    speak: () => console.log('Woof!')
-};
-var calculateAge = birthYear => Date.now() - birthYear;
-var totalLength = (x, y) => x.length + y.length;
-totalLength([1, 2, 3], [2, 3, 4]);
+function totalLength(x, y) {
+    let xLength = x.length;
+    let yLength = y.length;
+    if (x instanceof Array) {
+        x.push('abc');
+    }
+    if (x instanceof String) {
+        x.substring(0, 5);
+    }
+    return xLength + yLength;
+}
