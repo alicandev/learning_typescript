@@ -7,4 +7,4 @@ function getTodo(id) {
     };
     return todo;
 }
-var _a = getTodo(123), id = _a.id, title = _a.title, completed = _a.completed;
+var _a = getTodo(123), id = _a.id, title = _a.title, isCompleted = _a.completed;

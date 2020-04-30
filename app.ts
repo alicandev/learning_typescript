@@ -9,4 +9,4 @@ function getTodo(id) {
     return todo;
 }
 
-let { id, title, completed } = getTodo(123);
+let { id, title, completed:isCompleted } = getTodo(123);
