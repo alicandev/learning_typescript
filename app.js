@@ -1,7 +1,10 @@
 //destructuring an object
-var todo = {
-    id: 123,
-    title: "Pick up the dry cleaning.",
-    completed: false
-};
-var id = todo.id, title = todo.title, completed = todo.completed;
+function getTodo(id) {
+    var todo = {
+        id: 123,
+        title: "Pick up the dry cleaning.",
+        completed: false
+    };
+    return todo;
+}
+var _a = getTodo(123), id = _a.id, title = _a.title, completed = _a.completed;
