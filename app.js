@@ -9,4 +9,3 @@ function totalLength(x, y) {
     }
     return xLength + yLength;
 }
-totalLength();
