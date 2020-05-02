@@ -12,7 +12,7 @@ function totalLength (x:(string | Array<any>), y:(string | Array<any>)) : number
     if (x instanceof String) { 
         x.substring(0,5) 
     }
-    
+
     return xLength + yLength
 }
 
